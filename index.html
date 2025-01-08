@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Démineur - EPSI SN2</title>
+  <script defer src="script.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+    
+<body class="bg-gray-100 text-gray-800">
+  <div class="container mx-auto p-4">
+    <h1 class="text-3xl font-bold text-center mb-4">Démineur - EPSI SN2</h1>
+    <div class="flex justify-between items-center mb-4">
+      <div>
+        <label for="difficulty" class="mr-2">Niveau :</label>
+        <select id="difficulty" class="border rounded p-1">
+          <option value="beginner">Débutant (9x9, 10 bombes)</option>
+          <option value="intermediate">Intermédiaire (16x16, 40 bombes)</option>
+          <option value="expert">Expert (22x22, 100 bombes)</option>
+          <option value="master">Maître (30x30, 250 bombes)</option>
+        </select>
+      </div>
+      <button id="start-game" class="bg-blue-500 text-white px-4 py-2 rounded">Lancer la partie</button>
+      <div>
+        Temps : <span id="timer">0</span> s
+      </div>
+    </div>
+    <div id="game-container" class="flex justify-center items-center mt-4">
+        <div id="game-board" class="grid gap-1 rounded p-2 "></div>
+      </div>
+      <div id="status" class="text-center pt-20 text-[60px] text-red-500 font-bold mb-4"></div>
+
+  </div>
+</body>
+</html>
